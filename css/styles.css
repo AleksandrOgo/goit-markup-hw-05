@@ -83,7 +83,7 @@ display: block;
 color: var(--color-blue);
 }
 .link-nav:hover {
-color: var(--color-blue-light)
+color: var(--color-blue-light);
 }
 .link-address {
 font-weight: 400;
@@ -98,6 +98,8 @@ color: var(--color-dark);
 display: flex;
 align-items: center;
 gap: 76px;
+}
+.navigation:hover {
 }
 .list-navigation {
 display: flex;
@@ -148,6 +150,8 @@ border-radius: 4px;
 }
 .button-order-service:hover {
 background-color: var(--color-blue-light);
+transition-property: transform;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order-service:focus {
 background-color: var(--color-blue);
