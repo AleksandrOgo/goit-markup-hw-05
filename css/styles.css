@@ -59,6 +59,9 @@ text-decoration: none;
 }
 .logo:focus {
 color: var(--color-blue);
+transition-duration: 250ms;
+transition-property: background-color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-studio {
 color: var(--color-dark);
@@ -70,6 +73,9 @@ text-decoration: none;
 }
 .link:focus {
 color: var(--color-blue);
+transition-duration: 250ms;
+transition-property: background-color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-nav {
 font-weight: 500;
@@ -81,9 +87,15 @@ display: block;
 }
 .link-nav:focus {
 color: var(--color-blue);
+transition-duration: 250ms;
+transition-property: background-color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-nav:hover {
 color: var(--color-blue-light);
+transition-duration: 250ms;
+transition-property: background-color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address {
 font-weight: 400;
@@ -150,11 +162,15 @@ border-radius: 4px;
 }
 .button-order-service:hover {
 background-color: var(--color-blue-light);
-transition-property: transform;
+transition-duration: 250ms;
+transition-property: background-color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order-service:focus {
 background-color: var(--color-blue);
+transition-duration: 250ms;
+transition-property: background-color;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio-navi {
 font-family: 'Roboto', sans-serif;
