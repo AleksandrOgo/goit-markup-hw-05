@@ -328,23 +328,23 @@ gap: 24px;
 .card-bottom {
 padding: 32px 0;
 }
-.team-image {
+.application-card:hover .application {
+transform: translateY(0);
+}
+.application-card {
 position: relative;
 overflow: hidden;
 }
-
-.command {
+.application {
 position: absolute;
+color: var(--color-light);
+background-color: var(--color-blue);
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-color: var(--color-blue);
 transform: translateY(100%);
 transition: transform 250ms;
-}
-.team-image:hover .command {
-transform: translateX(0);
 }
 .visually-hidden {
     position: absolute;
