@@ -78,7 +78,7 @@ line-height: 1.5;
 text-decoration: none;
 color: var(--color-dark);
 display: block;
-transition-duration: 2500ms;
+transition-duration: 250ms;
 transition-property: background-color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
@@ -91,7 +91,8 @@ position: relative;
     background-color: currentColor;
     border-radius: 2px;
     position: absolute;
-    bottom: 0;
+    bottom: -25px;
+    color: var(--color-blue-light);
 
 }
 .link-nav:focus {
@@ -99,9 +100,6 @@ color: var(--color-blue);
 }
 .link-nav:hover {
 color: var(--color-blue-light);
-transition-duration: 250ms;
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-address {
 font-weight: 400;
@@ -139,9 +137,20 @@ text-decoration: none;
 font-style: normal;
 margin-left: auto;
 }
+
+.link-address:focus {
+    color: var(--color-blue);
+}
+
+.link-address:hover {
+    color: var(--color-blue-light);
+}
 .contacts-list {
 display: flex;
 gap: 40px;
+}
+.contacts-list:hover {
+
 }
 .hero {
 background-color: var(--color-dark);
@@ -196,7 +205,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 background-color: var(--color-blue-light);
 color: var(--color-light);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
 border-color: var(--color-blue-light);
 }
 .button-portfolio-navi:focus {
@@ -400,6 +408,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-card-text:hover {
     box-sizing: border-box;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
 }
 .portfolio-card-text:focus {
 box-sizing: border-box;
@@ -609,9 +618,9 @@ transform: scale(0);
     border: 1px solid rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
-
-
-
+}
+.modal-close:hover {
+    background-color: var(--color-blue-light);
 }
 .close-icon {
     color: #000000;
@@ -619,6 +628,7 @@ transform: scale(0);
     display: inline-block;
     width: 8px;
     height: 8px;
+    cursor: pointer;
 
 
 
