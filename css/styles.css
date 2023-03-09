@@ -336,8 +336,15 @@ gap: 24px;
 .card-bottom {
 padding: 32px 0;
 }
-.application-card:hover .application {
+.application-all {
+display: block;
+box-sizing: border-box;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+text-decoration: none;
+}
+.application-all:hover .application {
 transform: translateY(0);
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .application-card {
 position: relative;
@@ -401,14 +408,9 @@ background: var(--color-gray-light)
 .portfolio-card-text {
 background: var(--color-white);
 align-items: center;
-transition-duration: 250ms;
-transition-property: background-color;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-card-text:hover {
-    box-sizing: border-box;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    cursor: pointer;
+
 }
 .portfolio-card-text:focus {
 box-sizing: border-box;
