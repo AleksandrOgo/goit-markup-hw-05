@@ -79,7 +79,7 @@ text-decoration: none;
 color: var(--color-dark);
 display: block;
 transition-duration: 250ms;
-transition-property: background-color;
+transition-property: color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 position: relative;
 }
@@ -106,6 +106,7 @@ font-weight: 400;
 color: var(--color-gray);
 padding: 24px 0px;
 text-decoration: none;
+transition: color;
 }
 .navigation {
 font-size: var(--font-size-16);
@@ -195,10 +196,11 @@ cursor: pointer;
 margin: 0 auto;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 padding: 12px 24px;
 transition-duration: 250ms;
-transition-property: background-color;
+transition-property: color;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio-navi:hover{
@@ -339,13 +341,26 @@ padding: 32px 0;
 .application-all {
 display: block;
 box-sizing: border-box;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 text-decoration: none;
+
 }
 .application-all:hover .application {
 transform: translateY(0);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.application-all:hover {
+    transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.application-all:focus .application {
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.application-all:focus {
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .application-card {
 position: relative;
 overflow: hidden;
@@ -496,12 +511,11 @@ background-color: var(--color-blue-light);
     border-radius: 4px;
     color: #AFB1B8;
     transition-duration: 250ms;
-    transition-property: background-color;
+    transition-property: border, color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover {
 border: 1px solid #404BBF;
-border-radius: 4px;
 color: var(--color-blue-light);
 }
 .customers-link:focus {
@@ -620,6 +634,7 @@ transform: scale(0);
     border: 1px solid rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .modal-close:hover {
     background-color: var(--color-blue-light);
@@ -630,8 +645,7 @@ transform: scale(0);
     display: inline-block;
     width: 8px;
     height: 8px;
-    cursor: pointer;
-
-
-
+}
+.close-icon:hover {
+    fill: #FFFFFF;
 }
